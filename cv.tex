@@ -1,0 +1,510 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} %for loading fonts
+\usepackage{multirow}
+\usepackage{amssymb} 
+
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\usepackage{array}
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo}
+\usepackage{tabu}%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Viplav .P. \textsc{Patil}
+	}\bigskip\par}
+
+
+{\Large Email ID:Viplavdhande91@gmail.com}
+
+\par	
+{\Large Contact No.:9421679707}
+
+ 
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{}
+
+
+\section{CAREER PROFILE:}
+
+\begin{center}
+\begin{tabular}{ | m{5.5em} | m{3.5cm}| m{3.5cm} | m{3cm} | m{3cm} | } 
+\hline
+\textbf{Examination Passed} & \textbf{School/College Name}  & \textbf{Board/University}  & \textbf{Year of Passing}  & \textbf{Percentage }  \\ 
+\hline
+M.Tech (Computer Science)  & National Institute of Technology,Durgapur & NIT Durgapur & Currently Pursuing & \\
+
+
+\hline
+B.E(Computer Engineering) & SSBT’s COET,Bambhori  & NMU Jalgaon  & July 2017  & CGPA 6.69/10 \\
+
+\hline
+HSC Science  & N.H.Ranka Jr.College,Bodwad(M.S) & Nashik & June 2010 & 71.33 First Class \\
+
+\hline
+SSC & N.H.Ranka HighSchool ,Bodwad(M.S) & Nashik & May 2007 & 62.46 First class \\ 
+\hline
+\end{tabular}
+\end{center}
+
+
+
+\vspace{15mm}
+
+
+\section{M.Tech(Computer Science) Academic SGPA:}
+
+\begin{tabu} to 0.8\textwidth { | X[l] | X[l] |  }
+ \hline
+ 
+ \Large
+ SEMISTER  & \Large
+  Semister Grade Average Points(On 10 Scale)   \\
+\hline
+\large Semister I & 6.0   \\
+ \hline
+ 
+
+\end{tabu}
+
+
+
+
+
+
+
+
+
+
+
+\vspace{15mm}
+
+
+\section{B.E Academic SGPA:}
+
+\begin{tabu} to 0.8\textwidth { | X[l] | X[l] |  }
+ \hline
+ 
+ \Large
+ SEMISTER  & \Large
+  Semister Grade Average Points(On 10 Scale)   \\
+\hline
+\large Semister I & 5.61   \\
+ \hline
+ 
+\large Semister II & 6.78  \\
+ \hline
+ 
+ \large Semister III  &  5.52 \\
+ \hline
+ 
+\large  Semister IV & 6.83  \\
+ \hline
+ 
+\large Semister  V &   6.78 \\
+ \hline
+ 
+\large Semister VI &   7.57\\
+ \hline
+ 
+\large Semister VII  & 7.22  \\
+ \hline
+ 
+ \large Semister VIII & 7.22  \\
+ \hline
+
+\end{tabu}
+%
+%\newpage
+%\section{AREAS OF INTEREST:}
+%\begin{enumerate}
+  
+%\Large  \item \Large Research Interest: 
+   
+ %  \begin{itemize}
+  %  \item \small Machine learning,Deep Learning,Artificial Neural Networks
+     %\item  
+  %\end{itemize}
+%\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Personal Data:}
+
+\begin{tabu} to 1.2\textwidth { | X[l] | X[1] | }
+ \hline
+\large Name & Viplav Pradeep  Patil \\
+
+\hline
+\large Father’s Name   & Shri.Pradeep Madhukar Patil  \\
+ 
+\hline
+\large Gender & Male \\
+ 
+\hline
+\large Date of Birth   & 02/07/1992 \\
+ 
+\hline
+\large Nationality  & Indian \\
+ 
+\hline
+\large Religion/ Cast/ Category   & Hindu Leva-Patidar(OBC)   \\
+ 
+\hline
+\large Marital Status   & Unmarried   
+\\
+ 
+\hline
+\large Language Known   & English,Hindi,Marathi 
+\\
+ 
+\hline
+\large Correspondence Address &  Ujwal Apartments, 
+\par Flat no 3,Behind M.J College,
+\par Near Girna Tank,
+\par Jalgaon-425001,Maharashtra \\
+%\hline
+%\large Current Address & Jalgaon,Maharashtra \\
+%\hline
+%
+\hline
+\large Current Address & 133,Hall6,NIT Durgapur-713209,West Bengal \\
+\hline
+
+\end{tabu}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{TECHNICAL Skills:}
+
+\begin{tabu} to 0.8\textwidth { | X[l] | X[l] |  }
+ \hline
+ %\large Basic Knowledge: &  Databases,Computer %Networks,Algorithms,Data Structures using C \\
+ %\hline
+ \large  Programming skills:  & C ,CORE-JAVA, Python\\
+ 
+ \hline
+\large  Technologies Known/Framework Hands on:  &   HTML,CSS,Bootstrap,Django(Python Framework),MySQL,PYTHON LIBRARY== PANDAS,NUMPY,MATPLOTLIB  \\
+  
+
+
+\hline
+\end{tabu}
+
+
+
+
+
+
+\section{PROJECTS:}
+
+\renewcommand{\labelitemi}{$\blacksquare$}
+ %\renewcommand\labelitemii{$\square$}
+ 
+ 
+ \begin{itemize}
+   \item {\large PROJECT 1}
+   
+ \end{itemize}
+
+
+\begin{tabu} to 0.9\textwidth { | X[l] | X[2.5] | }
+ \hline
+ \large Title & Resort Employee Management System\\
+ %\hline
+ %Guide   & \\
+ 
+ \hline
+\large Front End  & HTML,CSS,BOOTSTRAP\\
+ 
+\hline
+\large Description & The implementation of this project is concerned with Attendance Management,Employees Salary Management,Advance Amount taken Management.It is the Perosnal secured dashboard for owner. \\
+\hline
+\hline
+\large Funding Organization & Anand Resorts,Nashik \\
+\hline
+
+\large Github Repo. & https://github.com/viplavdhande91/Resort-Management-system.git \\
+ 
+
+ 
+\hline
+\end{tabu}
+ 
+ 
+ 
+ 
+\vspace{10mm}
+
+ 
+ \renewcommand{\labelitemi}{$\blacksquare$}
+ %\renewcommand\labelitemii{$\square$}
+ 
+ 
+ \begin{itemize}
+   \item {\large PROJECT 2}
+   
+ \end{itemize}
+
+
+\begin{tabu} to 0.9\textwidth { | X[l] | X[2.5] | }
+ \hline
+ \large Title & Data Analysis of Travel Buses(India Bus)\\
+ %\hline
+ %Guide   & \\
+ 
+ \hline
+\large Front End  & Console Based\\
+ 
+
+ \hline
+ \large Technolgies Used,Back End    & PYTHON(PANDAS), MYSQL \\
+ 
+ \hline
+\large Input  & MYSQL   \\
+
+
+\hline
+\large Output  & Microsoft Excel(13 Files)   \\
+ 
+ \hline
+\large Description & The implementation of this project takes MYsql input by querying Mysql Database and exports into Excel files \\
+
+
+\hline
+\large Github Repo. & https://github.com/viplavdhande91/Indiabus-Data-Analysis-Project.git \\
+ 
+ 
+\hline
+ 
+
+ 
+\hline
+\end{tabu}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ \newpage
+ \begin{itemize}
+   \item {\large PROJECT 3 (B.E)}
+   
+ \end{itemize}
+\begin{tabu} to 0.9\textwidth { | X[l] | X[2.5] | }
+ \hline
+ \large Title & ANALYSIS AND PREDICTION OF
+STUDENTS BEHAVIOUR BY DATA
+MINING'S CLASSIFICATION METHOD\\
+ %\hline
+ %Guide   & \\
+ 
+ \hline
+\large Front End  & Python\\
+ 
+ \hline
+ \large Back End    & MYSQL \\
+ 
+ \hline
+\large Input  & Static Relational database of student   \\
+ 
+ \hline
+\large Description & Giving Static database Input and calculate Predictive  and Probablistic Values of Students Behaviour using Naive Bayes Classifcation Algorithm. \\
+ 
+ 
+\hline
+\end{tabu}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{CERTIFICATIONS:}
+\begin{enumerate}
+   
+    \item Python Online Certification on Udemy by Jose Portilla(Data Scientist)
+   
+   \begin{itemize}
+     \item Complete Python Bootcamp
+
+      \end{itemize}  
+\end{enumerate}
+
+
+\vspace{10mm}
+
+\section{PUBLICATONS:}
+\begin{enumerate}
+   \item Paper Publication (Level: International Journal) 
+   \begin{itemize}
+     \item Viplav Patil,Vinaya Patil, Shiwani Suryawanshi, Mayur Saner, Bhushan Sarode STUDENT PERFORMANCE PREDICTION USING CLASSIFICATION DATA MINING TECHNIQUES (IJSDR  ), Vol.2,Issue 6, June 2017, Paperid - IJSDR1706021,Print ISSN: 2455-2631.
+ 
+      \end{itemize}
+    
+\end{enumerate}
+
+\vspace{10mm}
+\large 
+\par
+I hereby certify that the information specified above is true,complete and correct to the best of my knowledge and belief.  
+
+             
+\vspace{4mm}
+
+{\large Date : \today }
+\par
+{\large Place : Durgapur(West Bengal) }
+
+\begin{flushright}
+{\LARGE Viplav .P. Patil}
+\end{flushright}
+   
+%\newpage
+%\par{\centering\Large \hypertarget{grds}{Master of 
+%\bigskip
+
+
+\end{document}
