@@ -5,6 +5,8 @@
 \usepackage{fontspec} %for loading fonts
 \usepackage{multirow}
 \usepackage{amssymb} 
+\usepackage{xcolor,lipsum}
+\usepackage{titlesec}
 
 \usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
 \usepackage{array}
@@ -61,17 +63,20 @@ ItalicFont = Fontin-Italic.otf
 \font\fb=''[cmr10]'' %for use with \LaTeX command
 
 %--------------------TITLE-------------
-\par{\centering
-		{\Huge Viplav .P. \textsc{Patil}
-	}\bigskip\par}
+%\par{\centering
+%		{\Huge Viplav .P. \textsc{Patil}
+%	}\bigskip\par}
 
 \par	
-{\large M.tech Student }
+
+{\Large Viplav .P. \textsc{Patil} }
+
+{\large Second Year M.tech Student }
  
-{\large Email ID:Viplavdhande91@gmail.com}
+{\large Viplavdhande91@gmail.com}
 
 \par	
-{\large Contact No:9421679707}
+{\large +91 9421679707}
 
 \par	
 {\large Computer Science and Engineering 
@@ -85,27 +90,41 @@ ItalicFont = Fontin-Italic.otf
 
 %--------------------SECTIONS-----------------------------------
 %Section: Personal Data
-\section{}
+
+\titleformat{name=\section}[block]
+  {\sffamily\large}
+  {}
+  {0pt}
+  {\colorsection}
+\titlespacing.*{\section}{0pt}{\baselineskip}{\baselineskip}
+
+\newcommand{\colorsection}[1]{%
+  \colorbox{blue!25}{\parbox{\dimexpr\textwidth-2\fboxsep}{\thesection\ #1}}}
 
 
-\section{CAREER PROFILE:}
+\section{Academic Details:}
 
 \begin{center}
-\begin{tabular}{ | m{5.5em} | m{3.5cm}| m{3.5cm} | m{3cm} | m{3cm} | } 
+\begin{tabular}{ | m{2.0cm} | m{7.0cm}| m{3.5cm} | m{3cm} | } 
 \hline
-\textbf{Examination Passed} & \textbf{School/College Name}  & \textbf{Board/University}  & \textbf{Year of Passing}  & \textbf{Percentage }  \\ 
+\textbf{Degree} & \textbf{Institute}    & \textbf{Year of Passing}  & \textbf{Percentage/CGPA }  \\ 
 \hline
-M.Tech (Computer Science)  & National Institute of Technology,Durgapur & NIT Durgapur &Pursuing(Started July 2019) & -\\
+M.Tech\newline(Computer Science)  & National Institute of Technology,Durgapur  & Pursuing(Started July 2019) & 6.88\\
 
 
 \hline
-B.E(Computer Engineering) & SSBT’s COET,Bambhori  & NMU Jalgaon  & July 2017  & CGPA 6.69/10 \\
+B.E\newline(Computer Engineering) & SSBT’s COET,Bambhori\newline
+
+{\small (Affiliated to North Mahrashtra University)}   & July 2017  & CGPA 6.69/10 \\
 
 \hline
-HSC Science  & N.H.Ranka Jr.College,Bodwad(M.S) & Nashik & June 2010 & 71.33 First Class \\
+HSC\newline Science  & N.H.Ranka Jr.College,Bodwad\newline
+{\small (Maharashtra State Board)}& June 2010 & 71.33 First Class \\
 
 \hline
-SSC & N.H.Ranka HighSchool ,Bodwad(M.S) & Nashik & May 2007 & 62.46 First class \\ 
+SSC & N.H.Ranka HighSchool ,Bodwad\newline
+{\small (Maharashtra State Board)}
+  & May 2007 & 62.46 First class \\ 
 \hline
 \end{tabular}
 \end{center}
@@ -126,7 +145,8 @@ SSC & N.H.Ranka HighSchool ,Bodwad(M.S) & Nashik & May 2007 & 62.46 First class 
 \hline
 \large Semister I & 6.0   \\
  \hline
- 
+ \large Semister II & 7.75  \\
+ \hline
 
 \end{tabu}
 
@@ -140,9 +160,8 @@ SSC & N.H.Ranka HighSchool ,Bodwad(M.S) & Nashik & May 2007 & 62.46 First class 
 
 
 
-\vspace{5mm}
 
-
+\iffalse
 \section{B.E Academic SGPA:}
 
 \begin{tabu} to 0.8\textwidth { | X[l] | X[l] |  }
@@ -178,7 +197,7 @@ SSC & N.H.Ranka HighSchool ,Bodwad(M.S) & Nashik & May 2007 & 62.46 First class 
 
 \end{tabu}
 
-
+\fi
 
 \vspace{5mm}
 
@@ -194,14 +213,18 @@ SSC & N.H.Ranka HighSchool ,Bodwad(M.S) & Nashik & May 2007 & 62.46 First class 
 
 \section{TECHNICAL Skills:}
 
-\begin{tabu} to 0.8\textwidth { | X[l] | X[l] |  }
+\begin{tabu} to 1.0\textwidth { | X[l] | X[l] |  }
  \hline
- 
- \large  Programming skills:  & C ,CORE-JAVA, Python\\
+ %\large  Area of Interest:  & Computer Networks,Data Structures,Database Managment Systems\\
+ \hline
+ \large  Programming Languages:  & C ,JAVA, Python,HTML,CSS,Bootstrap4,MySQL,\\
  
  \hline
-\large  Technologies Known/Framework Hands on:  &   HTML,CSS,Bootstrap4,Django(Python Framework),MySQL,PYTHON   \\
-  
+\large  Software Packages:  & Numpy,Pandas,Django,   \\
+ \hline
+
+ \large  Platforms:  & Ubuntu and Windows.   \\
+
 
 
 \hline
@@ -320,7 +343,9 @@ SSC & N.H.Ranka HighSchool ,Bodwad(M.S) & Nashik & May 2007 & 62.46 First class 
 
  \hline
  \large Technologies Used,Back End    & PYTHON(Django), Sqlite \\
- 
+ \hline
+\large Description & This is fully functional E-commerce website platform for selling of Coloured Sneakers with comaplet Online payment gateway Integration.
+\newline(Current Stage:Production)  \\
  
 
  
@@ -340,12 +365,22 @@ SSC & N.H.Ranka HighSchool ,Bodwad(M.S) & Nashik & May 2007 & 62.46 First class 
  
  
 
- \vspace{15mm}
+ \vspace{5mm}
 
  
  
  
+\section{Conferences/Workshops Attended:}
+\begin{enumerate}
+   \begin{itemize}
+     \item Online Workshop for Cyber Security & Ethical Hacking 
+     arranged by NIT Durgapur & Indian School of Ethical Hacking
+     
+
  
+      \end{itemize}
+    
+\end{enumerate} 
 
 \section{PUBLICATONS:}
 \begin{enumerate}
@@ -357,7 +392,7 @@ SSC & N.H.Ranka HighSchool ,Bodwad(M.S) & Nashik & May 2007 & 62.46 First class 
     
 \end{enumerate}
 
-\vspace{10mm}
+\vspace{5mm}
 \large 
 \par
 I hereby certify that the information specified above is true,complete and correct to the best of my knowledge and belief.  
